@@ -2,7 +2,7 @@ pipeline{
     agent {
 	docker {
 	  image 'node:14.16.0'
-	  args '-p 3000:3000'
+	  args '-p 3000:3000 -p 5000:5000'
 	}
     }
     environment{
